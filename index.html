@@ -50,9 +50,44 @@
       margin-top:20px;
     }
   </style>
+  #welcome{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:28px;
+  font-weight:bold;
+  z-index:9999;
+  animation:fadeOut 3s forwards;
+}
+
+@keyframes fadeOut{
+  0%{
+    opacity:1;
+  }
+
+  80%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    visibility:hidden;
+  }
+}
 </head>
 
 <body>
+
+<div id="welcome">
+  Welcome to my social media handles
+</div>
 
 <img class="profile" src="./Photo.png">
 
@@ -70,6 +105,10 @@
 
 <a class="btn" href="https://www.facebook.com/share/1G27g8ojVb/">
 📘 Facebook
+</a>
+
+<a class="btn" href="https://x.com/SatishK59785428">
+𝕏 X (Twitter)
 </a>
 
 <div class="card">
