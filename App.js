@@ -17,7 +17,7 @@ className="w-full h-full object-cover"
         </p>
 
         <div className="mt-5 text-sm text-zinc-300 italic">
-          “Helping people become mentally stronger.”
+          <p>Helping people live an alcohol-free and mentally stronger life.</p>
         </div>
       </div>
 
