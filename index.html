@@ -4,6 +4,41 @@
   <title>Satish Kumar Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+
+    #animationScreen{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:black;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  z-index:99999;
+}
+
+.crack{
+  font-size:80px;
+  animation:shake 0.5s infinite;
+}
+
+.text{
+  color:white;
+  font-size:26px;
+  font-weight:bold;
+  margin-top:20px;
+  text-align:center;
+}
+
+@keyframes shake{
+  0%{transform:translateX(0);}
+  25%{transform:translateX(-8px);}
+  50%{transform:translateX(8px);}
+  75%{transform:translateX(-8px);}
+  100%{transform:translateX(0);}
+}
     body{
       margin:0;
       font-family:Arial;
@@ -82,8 +117,28 @@
   }
 }
 </head>
+<script>
 
+function showAnimation(){
+
+  document.getElementById("animationScreen").style.display = "flex";
+
+  setTimeout(function(){
+
+    window.location.href = "
+https://youtube.com/playlist?list=PLlyoixoZkF1REFeQ5uFvrtirwpTzriHAt&si=Dsl8TaQ1YnJaOoE3";
+
+  },2500);
+
+}
+
+</script>
 <body>
+
+  <div id="animationScreen">
+  <div class="crack">🍾💥</div>
+  <div class="text">Break Addiction. Build Yourself.</div>
+</div>
 
 <div id="welcome">
   Strong Mind. Alcohol-Free Life.
@@ -109,6 +164,10 @@
 
 <a class="btn" href="https://x.com/SatishK59785428">
 𝕏 X (Twitter)
+</a>
+
+<a class="btn" href="#" onclick="showAnimation()">
+🍷 Alcohol Free Life
 </a>
 
 <div class="card">
