@@ -137,19 +137,32 @@ transform:scale(1);
 </head>
 <script>
 
+window.onload = function(){
+
+document.getElementById("welcome").style.display = "flex";
+
+setTimeout(function(){
+
+document.getElementById("welcome").style.display = "none";
+
+},3000);
+
+}
+
 function showAnimation(){
 
-  document.getElementById("animationScreen").style.display = "flex";
+document.getElementById("animationScreen").style.display = "flex";
 
-  setTimeout(function(){
+setTimeout(function(){
 
-    window.location.href = "https://www.youtube.com/playlist?list=PLlyoixoZkF1REFeQ5uFvrtirwpTzriHAt";
+window.location.href="https://www.youtube.com/playlist?list=PLlyoixoZkF1REFeQ5uFvrtirwpTzriHAt";
 
-  },2500);
+},2500);
 
 }
 
 </script>
+
 <body>
 
   <div id="animationScreen">
